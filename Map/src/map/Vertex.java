@@ -11,6 +11,11 @@ public class Vertex implements Comparable<Vertex> {
     private Vertex previosVertex;
     private double minDistance = Double.MAX_VALUE;
 
+    public Vertex() {
+    }
+    
+    
+
     public Vertex(String name) {
         this.name = name;
         this.edges = new ArrayList<>();

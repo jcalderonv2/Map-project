@@ -4,9 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
+    static Vertex vertex = new Vertex();
     static Dijkstra dijkstra = new Dijkstra();
     static Vertex v1 = new Vertex("Canada");
     static Vertex v2 = new Vertex("Estados unidos");
@@ -35,6 +38,7 @@ public class Main {
     static Vertex v25 = new Vertex("Nueva Zelanda");
     static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
     static PrintStream out = System.out;
+    static VertexList lista = new VertexList();
 
     public static void main(String[] args) throws IOException {
 
@@ -89,14 +93,238 @@ public class Main {
 
     }
 
-    public static void shortestPath() throws IOException{
+    public static void shortestPath() throws IOException {
 
-     
-        
-        generateEdges();
-        dijkstra.computePath(v1);
+        insertVertexToList();
+        System.out.println("<<-- Paises disponibles -->>");
+        lista.listar();
 
-        System.out.println(dijkstra.getShortestPathTo(v25));
+        String start;
+        String end;
+
+        out.println();
+        out.println();
+
+        out.println("inicio");
+        start = in.readLine();
+
+        out.println("fin");
+        end = in.readLine();
+
+        Object vs = start;
+        Object ve = end;
+
+        if (vs.equals(v1.getName()) && ve.equals(v1.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v1));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v2.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v2));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v3.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v3));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v4.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v4));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v5.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v5));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v6.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v6));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v7.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v7));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v8.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v8));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v9.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v9));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v10.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v10));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v11.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v11));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v12.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v12));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v13.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v13));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v14.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v14));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v15.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v15));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v16.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v16));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v17.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v17));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v18.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v18));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v19.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v19));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v20.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v20));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v21.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v21));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v22.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v22));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v23.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v23));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v24.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v24));
+
+        } else if (vs.equals(v1.getName()) && ve.equals(v25.getName())) {
+
+            generateEdges();
+            dijkstra.computePath(v1);
+
+            System.out.println(dijkstra.getShortestPathTo(v25));
+
+        }
+        else{
+            
+            out.print("Ruta no existe.");
+            
+        }
+
+    }
+
+    public static void insertVertexToList() {
+
+        lista.agregarAlFinal(v1);
+        lista.agregarAlFinal(v2);
+        lista.agregarAlFinal(v3);
+        lista.agregarAlFinal(v4);
+        lista.agregarAlFinal(v5);
+        lista.agregarAlFinal(v6);
+        lista.agregarAlFinal(v7);
+        lista.agregarAlFinal(v8);
+        lista.agregarAlFinal(v9);
+        lista.agregarAlFinal(v10);
+        lista.agregarAlFinal(v11);
+        lista.agregarAlFinal(v12);
+        lista.agregarAlFinal(v13);
+        lista.agregarAlFinal(v14);
+        lista.agregarAlFinal(v15);
+        lista.agregarAlFinal(v16);
+        lista.agregarAlFinal(v17);
+        lista.agregarAlFinal(v18);
+        lista.agregarAlFinal(v19);
+        lista.agregarAlFinal(v20);
+        lista.agregarAlFinal(v21);
+        lista.agregarAlFinal(v22);
+        lista.agregarAlFinal(v23);
+        lista.agregarAlFinal(v24);
+        lista.agregarAlFinal(v25);
 
     }
 
